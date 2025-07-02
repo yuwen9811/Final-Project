@@ -2,6 +2,7 @@
 # Project Hypothesis
 
 H₀ (Null Hypothesis): There is no significant change in the interannual variability, onset timing, or spatial distribution of rainfall during Ghana’s March–June rainy season from 2000 to 2020.
+
 H₁ (Alternative Hypothesis): There are significant changes in one or more of the following during the 2000–2020 period:
 - Annual total rainfall
 - Timing of rainy season onset
