@@ -1,8 +1,12 @@
 # Final-Project
 # Project Hypothesis
 
-How has the interannual variability, seasonal onset timing, and spatial distribution of rainfall during Ghana’s primary rainy season (March–June) evolved over the period 2000–2020?  
-We want to understand whether the timing, intensity, and variability of Ghana’s main rainy season (March–June) has changed from 2000 to 2020.
+H₀ (Null Hypothesis): There is no significant change in the interannual variability, onset timing, or spatial distribution of rainfall during Ghana’s March–June rainy season from 2000 to 2020.
+H₁ (Alternative Hypothesis): There are significant changes in one or more of the following during the 2000–2020 period:
+- Annual total rainfall
+- Timing of rainy season onset
+- Spatial variability of rainfall
+- Frequency of extreme rainfall events
 
 # Data Source
 
@@ -13,6 +17,11 @@ Global daily GeoTIFFs (p05):
 
 # Analysis Plan
 
-We will crop daily CHIRPS data to Ghana for 2000–2020 and calculate national-average daily rainfall time series.  
-We will analyze annual totals, interannual variability, and the timing of rainy season onset using rolling means.  
-Finally, we will visualize trends with time series plots and spatial variability maps to assess changes in rainfall patterns over Ghana.
+We will subset CHIRPS daily rainfall data over Ghana from 2000 to 2020, focusing on the March–June rainy season. Using xarray, numpy, and matplotlib, we will calculate national mean rainfall, seasonal totals, onset timing (via 5-day rolling means), interannual variability (CV), and frequency of extreme rainfall days (>90th percentile). Visualizations will include time series trends, onset shifts, spatial variability maps, and extreme event counts to evaluate rainfall pattern changes across Ghana.
+
+### Visualization Figures
+- Figure 1: Annual Rainy Season Total Precipitation (2000 - 2020) - A line plot of the first day of each year when 5-day rainfall exceeds a threshold, showing whether the onset of the rainy season has shifted earlier or later over time.
+- Figure 2: Onset Timing of Rainy Season - A line plot of the first day of each year when 5-day rainfall exceeds a threshold, showing whether the onset of the rainy season has shifted earlier or later over time.
+- Figure 3: Interannual Coefficient of Variation (CV) - A time series showing the relative variability of national mean rainfall (CV = std/mean), indicating how consistent rainfall has been from year to year.
+- Figure 4: Spatial Standard Deviation Map of Rainfall - A heatmap showing the spatial variability (standard deviation) of total rainy season precipitation across Ghana, highlighting areas of greater fluctuation.
+- Figure 5: Trend in Extreme Rainfall Days (>90th Percentile) - A time series showing the number of days per year with rainfall exceeding the 90th percentile, revealing possible increases in rainfall extremes.
