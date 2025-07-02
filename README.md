@@ -16,7 +16,7 @@ We will use **CHIRPS v2.0 daily precipitation data**:
 Global daily GeoTIFFs (p05):  
 [https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/tifs/p05/](https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/tifs/p05/)
 
-# Analysis Plan
+# Analysis Plan Summary
 
 We will subset CHIRPS daily rainfall data over Ghana from 2000 to 2020, focusing on the March–June rainy season. Using xarray, numpy, and matplotlib, we will calculate national mean rainfall, seasonal totals, onset timing (via 5-day rolling means), interannual variability (CV), and frequency of extreme rainfall days (>90th percentile). Visualizations will include time series trends, onset shifts, spatial variability maps, and extreme event counts to evaluate rainfall pattern changes across Ghana.
 
