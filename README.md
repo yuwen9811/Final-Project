@@ -21,8 +21,8 @@ Global daily GeoTIFFs (p05):
 We will subset CHIRPS daily rainfall data over Ghana from 2000 to 2020, focusing on the March–June rainy season. Using xarray, numpy, and matplotlib, we will calculate national mean rainfall, seasonal totals, onset timing (via 5-day rolling means), interannual variability (CV), and frequency of extreme rainfall days (>90th percentile). Visualizations will include time series trends, onset shifts, spatial variability maps, and extreme event counts to evaluate rainfall pattern changes across Ghana.
 
 # Visualization Figures
-- Figure 1: a) Daily Rainfall during Rainy Seasons – A time series showing daily rainfall over Ghana for each March–June season from 2000 to 2020, illustrating the strong seasonal cycle and year-to-year variability in rainfall patterns.
-
+- Figure 1:
+  a) Daily Rainfall during Rainy Seasons – A time series showing daily rainfall over Ghana for each March–June season from 2000 to 2020, illustrating the strong seasonal cycle and year-to-year variability in rainfall patterns.
   b) Annual Mean Precipitation – A line plot showing the annual mean rainfall in millimeters per year from 2000 to 2020, with an added trendline to highlight potential long-term changes in average precipitation.
 - Figure 2: Onset Timing of Rainy Season - A line plot of the first day of each year when 5-day rainfall exceeds a threshold, showing whether the onset of the rainy season has shifted earlier or later over time.
 - Figure 3: Interannual Coefficient of Variation (CV) - A time series showing the relative variability of national mean rainfall (CV = std/mean), indicating how consistent rainfall has been from year to year.
